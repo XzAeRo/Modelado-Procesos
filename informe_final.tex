@@ -1,0 +1,125 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenx} %Codificacion del texto (ISO Latin1 encoding)
+
+\usepackage{fancyhdr} %Permite acomodar a tu gusto la parte de arriba y
+% abajo del documento
+\usepackage[spanish]{babel} %Permite definir el idioma del dcumento
+\usepackage{graphicx} %Permite exportar imagenes en formato eps
+\usepackage{hyperref}
+\usepackage{url} %Tipo de fuente para correos y paginas
+\usepackage{pgf}
+\usepackage{fleqn}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fancyvrb}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{colortbl} %Permite colocar colores a las tablas
+\usepackage{booktabs}
+\usepackage[final]{pdfpages}
+%%%%%%%%%%
+%Margenes%
+%%%%%%%%%%
+\parskip 1mm %Espacio entre parrafos
+
+\setlength{\topmargin}{0pt}
+\topmargin      0.5cm
+\oddsidemargin	0.1cm  % Ancho Letter 21,59cm
+\evensidemargin 0.5cm  % Alto  Letter 27,81cm
+\textwidth	17cm%15.5cm
+\textheight	21.0cm
+\headsep	4 mm
+\parindent	1.2cm
+%%%%%%%%%%%%%%%%%%%%%%
+%Estilo del documento%
+%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancyplain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fancyheadings. Top y Bottom del documento%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Recuerde que en este documento la portada del documento no posee
+% numeracion, pero de igual manera llamaremos a esa primera pagina la numero
+% 1, y la que viene la dos. Esto es para tener una idea de las que
+% llamaremos pares e impares
+\lhead{Modelado de Procesos de Negocio} %Parte superior izquierda
+\rhead{\bf \it Departamento de Informática - UTFSM} %Parte superior derecha
+\lfoot{} %Parte inferior izquierda. \thepage indica
+% el numero de pagina
+\cfoot{} %Parte inferior central
+\rfoot{\bf \thepage} %Parte inferior derecha
+\renewcommand{\footrulewidth}{0.4pt} %Linea de separacion inferior
+
+\newcommand{\primaria}[1]{
+	\textbf{\underline{#1}}
+}
+
+\newcommand{\foranea}[1]{
+	\textbf{\textsl{#1}}
+}
+
+\newcommand{\primyfor}[1]{
+	\underline{\foranea{#1}}
+}
+
+\makeatletter
+\newcommand\subsubsubsection{\@startsection {paragraph}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {1.5ex \@plus.2ex}%
+                                   {\normalfont\bfseries}}
+\newcommand\subsubsubsubsection{\@startsection {subparagraph}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {1.5ex \@plus.2ex}%
+                                   {\normalfont\bfseries}}
+
+
+\makeatother
+\makeindex
+
+\begin{document}
+\begin{titlepage}
+\title{Modelado de Procesos de Negocio \\ \begin{Large}\it Análisis de Natural Response\end{Large}} 
+\author{Victor Gonzalez Rodriguez\\\url{victor.gonzalezr@usm.cl} \\
+\and Neil Garcia\\\url{neil.garcia@usm.cl}}
+\date{\today}
+\maketitle
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+\section{Actores y Roles}
+\subsection}{Estructura Organizacional}
+\subsection{Especificación de los Actores}
+\subsection{Descripción de Roles}
+
+\section{Procesos}
+
+\section{Nombre de proceso 1}
+\subsection{Definición del Proceso}
+\subsubsection{Actores Involucrados}
+\subsection{Entradas y Salidas}
+\subsection{Indicadores del Proceso}
+\subsection{Modelo EPC}
+\subsection{Recomendaciones}
+
+\section{Nombre de proceso 2}
+\subsection{Definición del Proceso}
+\subsubsection{Actores Involucrados}
+\subsection{Entradas y Salidas}
+\subsection{Indicadores del Proceso}
+\subsection{Modelo EPC}
+\subsection{Recomendaciones}
+
+\section{Conclusiones}
+\subsection{Conclusiones Técnicas}
+\subsection{Conclusión de Neil García}
+\subsection{Conclusión de Victor Gonzalez}
+
+\section{Recomendaciones}
+
+\section{Referencias}
+
+\end{document} 
